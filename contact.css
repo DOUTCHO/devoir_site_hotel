@@ -1,0 +1,262 @@
+/*Menu*/
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(68, 67, 67);
+}
+#name-ets{
+    font-size: 2.5rem;
+    float: left;
+    box-shadow: rgb(68, 67, 67) 10px 5px;
+    margin-top: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(59, 59, 59);
+    margin-left: 20px;
+}
+.header{
+    background-color: rgba(231, 210, 18, 0.466);
+    width: 1303px;
+    height: 100px;
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+ul li a{
+    color: white;
+    letter-spacing: 0.2rem;
+    font-size: 1.3rem;
+}
+ul li a:hover{
+    color: orange;
+    text-decoration:underline;
+    font-size: x-large;
+}
+.menu li{
+    float: right;
+    padding: 35px;
+}
+.menu li a {
+    text-decoration: none;
+}
+/*image slider*/
+.body-slide{
+    width: 1303px;
+    height: 800px;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+}
+#slider{
+    overflow: hidden;
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img{
+    
+    width: 1300px;
+    height: 800px;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+/* corps de la page*/
+.contenu-contact{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    z-index: 5;
+    position: absolute;
+    margin-top: 800px;
+    width: 1300px;
+}
+.contact{
+    height: 600px;
+    background-color: rgb(97, 87, 87);
+    padding: 50px;
+    text-align: center;
+}
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.container h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: white;
+}
+.contact-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.contact-form{
+    text-align: left;
+}
+.contact-form h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+input, textarea{
+        width: 100%;
+        padding: 12px;
+        border-radius: 8px;
+        border: none;
+        background-color: gainsboro;
+        color: black;
+}
+input:focus,
+textarea:focus{
+    outline: none;
+    box-shadow: 0 0 8px black;
+}
+button{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: darkgrey;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 30px;
+}
+button:hover{
+    background-color: rgb(121, 108, 115);
+}
+.contact-info{
+    text-align: left;
+}
+.contact-info h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    color: white;
+}
+.contact-info p{
+    margin-bottom: 10px;
+    color: rgb(197, 196, 196);
+}
+.contact-info i{
+    color: white;
+    margin-left: 100px;
+    margin-right: 5px;
+}
+/* footer */
+footer{
+    background-color: rgb(68, 64, 64);
+    box-sizing: border-box;
+    z-index: 3;
+    position: absolute;
+    margin-top: 1478px;
+    width: 1300px;
+    overflow-x: hidden;
+}
+.contenu-footer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+}
+.icons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.icons a i{
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    opacity: 0.9;
+}
+
+.icons a:hover{
+    background-color:  rgb(68, 64, 64);
+    transition: 0.5s;
+}
+.icons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footernav{
+    margin: 0px;
+}
+.footernav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type:none;
+    gap: 2rem;
+    letter-spacing: 0.2rem;
+}
+.footernav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footernav ul li a:hover{
+    opacity: 1;
+    color: black;
+}
+.footerbottom{
+    padding: 20px;
+    text-align: center;
+}
+.footerbottom p{
+    color: black;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+    color: black;
+}
